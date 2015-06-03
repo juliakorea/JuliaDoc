@@ -73,9 +73,6 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-
-  <script type="text/javascript" src="{{ pathto('_static/jquery.word-break-keep-all.min.js', 1) }}"></script>
-
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -189,6 +186,7 @@
   {%- block footer %} {% endblock %}
 
 
+<script type="text/javascript" src="{{ pathto('_static/jquery.word-break-keep-all.min.js', 1) }}"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   $('body').wordBreakKeepAll();
