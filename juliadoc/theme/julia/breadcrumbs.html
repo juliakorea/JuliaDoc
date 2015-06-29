@@ -14,7 +14,8 @@
           {% elif show_source and source_url_prefix %}
             <a href="{{ source_url_prefix }}{{ pagename }}{{ source_suffix }}">View page source</a>
           {% elif show_source and has_source and sourcename %}
-            {% if pagename.startswith("phdthesis") %}
+            {% if pagename.startswith("index") %}
+            {% else if pagename.startswith("phdthesis") %}
               <a href="https://raw.githubusercontent.com/juliakorea/doc/master/src/{{ pagename }}.tex.txt" rel="nofollow"> 원문 보기</a>
             {% else %}
               <a href="https://raw.githubusercontent.com/juliakorea/doc/master/src/julia/doc/{{ pagename }}.md.txt" rel="nofollow"> 원문 보기</a>
