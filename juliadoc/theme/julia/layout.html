@@ -112,6 +112,23 @@
       </nav>
 
 
+
+      {# PAGE CONTENT #}
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          {% include "breadcrumbs.html" %}
+          <div role="main" class="document">
+            {% block body %}{% endblock %}
+          </div>
+          {% include "footer.html" %}
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -129,22 +146,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-
-      {# PAGE CONTENT #}
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          {% include "breadcrumbs.html" %}
-          <div role="main" class="document">
-            {% block body %}{% endblock %}
-          </div>
-          {% include "footer.html" %}
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
 
 <div class="fb-comments" data-width="100%" data-version="v2.3"></div>
 
@@ -193,7 +194,7 @@
 <script type="text/javascript" src="{{ pathto('_static/jquery.word-break-keep-all.min.js', 1) }}"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  $('body').wordBreakKeepAll();
+  $('p').wordBreakKeepAll();
 });
 </script>
 
